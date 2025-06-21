@@ -10,5 +10,7 @@ export const defaultTabs = [
 	{ id: 9, title: 'Users', url: '/users', pinned: false },
 	{ id: 10, title: 'Notifications', url: '/notifications', pinned: false },
 	{ id: 11, title: 'Messages', url: '/messages', pinned: false },
-	{ id: 12, title: 'Support', url: '/support', pinned: false }
+	{ id: 12, title: 'Support', url: '/support', pinned: false },
+	{ id: 13, title: 'Photo', url: '/photo', pinned: false },
+	{ id: 14, title: 'Chris', url: '/chris', pinned: false },
 ];

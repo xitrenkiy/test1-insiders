@@ -20,6 +20,8 @@ function App() {
 				<Route path="/notifications" element={<div>Notifications content</div>} />
 				<Route path="/messages" element={<div>Messages content</div>} />
 				<Route path="/support" element={<div>Support content</div>} />
+				<Route path="/photo" element={<div>Photo content</div>} />
+				<Route path="/chris" element={<div>Chris content</div>} />
 			</Routes>
 		</BrowserRouter>
 	)

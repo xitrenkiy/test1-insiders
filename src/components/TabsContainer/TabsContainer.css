@@ -1,11 +1,15 @@
-.tabs-wrapper {
+.tabs-container {
 	width: 100%;
+	margin: 0 auto;
 	display: flex;
-	position: sticky;
-	top: 0;
-	z-index: 2;
-	background-color: white;
-	border-bottom: 1px solid #ddd;
+	flex-direction: row;
+	align-items: center;
+}
+
+.tabs-wrapper {
+	display: flex;
+	max-width: 100%;
+	min-width: 0;
 }
 
 .tabs-bar {
@@ -67,4 +71,51 @@
 .drag-handle {
 	position: absolute;
 	top: 0px;
+}
+
+.tabs-overflow {
+	button {
+		color: #fff;
+	}
+}
+
+.overflow-menu {
+	min-width: 150px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	padding: 15px;
+	.tab-item {
+		color: #7F858D;
+		position: relative;
+		margin-top: 5px;
+	}
+	.tab-item:hover {
+		color: #343434;
+	}
+	.tab-item::before {
+		content: '';
+		display: block;
+		width: 120px;
+		height: 1px;
+		position: absolute;
+		background-color: #AEB6CE;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.tab-item:last-child::before {
+		content: '';
+		display: none;
+	}
+	.active {
+		color: #343434;
+		background-color: #fff;
+	}
 }
