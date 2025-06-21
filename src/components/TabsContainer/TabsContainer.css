@@ -1,0 +1,70 @@
+.tabs-wrapper {
+	width: 100%;
+	display: flex;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	background-color: white;
+	border-bottom: 1px solid #ddd;
+}
+
+.tabs-bar {
+	display: flex;
+	gap: 8px;
+	overflow-x: auto;
+}
+
+.tab-content {
+	padding: 16px;
+}
+
+.tabs-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	height: 25px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #7F858D;
+	padding: 20px
+}
+
+.active, .tabs-item:hover {
+	color: #343434;
+	background-color: #F1F5F8;
+}
+
+.tabs-item::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	width: 1px;
+	height: 16px;
+	background-color: #AEB6CE;
+}
+
+.context-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	button {
+		position: relative;
+		z-index: 3;
+		width: 120px;
+		height: 35px;
+		border-radius: 10px;
+		background-color: #fff;
+		box-shadow: 0px 8px 8px rgba(0, 0, 0, .3);
+	}
+}
+
+.drag-handle {
+	position: absolute;
+	top: 0px;
+}
